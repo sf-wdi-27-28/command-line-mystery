@@ -8,6 +8,7 @@ git status
 
 # Edit my solution file
 subl solution.md
+I made a change!
 
 # Commit initial solution
 git add solution.md
