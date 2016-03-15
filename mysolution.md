@@ -21,5 +21,41 @@ cd interviews
 ls
 cat interview-47246024
 	//Ms. Sun has brown hair and is not from New Zealand.  Not the witness from the cafe.
+cd ..
+head -n 179 streets/Buckingham_Place | tail -n 1
+	//SEE INTERVIEW #699607
+
+cd interviews
+cat interview-699607
+	Interviewed Ms. Church at 2:04 pm.  Witness stated that she did not see anyone she could identify as the shooter, that she ran away as soon as the shots were fired.
+
+	However, she reports seeing the car that fled the scene.  Describes it as a blue Honda, with a license plate that starts with "L337" and ends with "9"
+
+cd ..
+grep -A 5 "L337" vehicles
+	Possibilities:
+	License Plate L337DV9
+Make: Honda
+Color: Blue
+Owner: Joe Germuska
+Height: 6'2"
+Weight: 164 lbs
+
+License Plate L3375A9
+Make: Honda
+Color: Blue
+Owner: Jeremy Bowers
+Height: 6'1"
+Weight: 204 lbs
+
+cd memberships
+ls
+cat Delta_SkyMiles AAA Terminal_City_Library Museum_of_Bash_History | grep -c "Jeremy Bowers"
+Answer: 4
+
+Culprit: Jeremy Bowers
+
+
+
 
 
