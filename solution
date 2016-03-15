@@ -1,0 +1,216 @@
+#Command Line Mystery
+###### Solved by: Adam Reid
+
+##CLUES
+After reading instructions, I made my way through Terminal with these commands
+to find the clues.
+
+//cd command-line-mystery
+//ls
+//cd instructions
+//cat instructions
+//cd ..
+//cd mystery
+//less crimescene
+
+* I used a shortcut from google "/" to search for CLUE in less crimescene.
+##Clues
+CLUE: Footage from an ATM security camera is blurry but shows that the perpetrator is a tall male, at least 6'.
+CLUE: Found a wallet believed to belong to the killer: no ID, just loose change, and membership cards for AAA,
+Delta SkyMiles, the local library, and the Museum of Bash History. The cards are totally untraceable and have
+no name, for some reason.
+CLUE: Questioned the barista at the local coffee shop. He said a woman left right before they heard the shots.
+The name on her latte was Annabel, she had blond spiky hair and a New Zealand accent.
+
+**Looked up Hint 1**
+hint. 1 - head command in terminal
+
+## Commands Continued
+//cd people
+//less people
+/Annabel *(search Annabel)*
+
+## People found from CLUES, named Annabel and there details
+Annabel Church          F       38      Buckingham Place, line 179
+Annabel Fuglsang        M       40      Haley Street, line 176
+Oluwasegun Annabel      M       37      Mattapan Street, line 173
+
+##Commands Continued
+//ls
+//cd streets
+//cd ..
+//ls
+// cd vehicles , Looked in Vehicles
+//less vehicles
+
+## Vehicles information
+Vehicles that are registered to people named Annabel.
+
+License Plate L2E48EF
+Make: BMW
+Color: Orange
+Owner: Annabel Church
+Height: 5'5"
+Weight: 201 lbs
+
+License Plate 0O27BTD
+Make: Fiat
+Color: Yellow
+Owner: Annabel Sun
+Height: 5'0"
+Weight: 232 lbsn
+
+License Plate 20VVU2P
+Make: Mazda
+Color: Pink
+Owner: Annabel Fuglsang
+Height: 5'11"
+Weight: 241 lbs
+
+##Command Continued
+//cd ..
+//ls
+// cd membership,
+
+##Memberships with Annabel name.
+
+Viewed which Annabel's had memberships
+
+//less AAA
+Annabel Church
+
+//q
+//less AAdvantage
+/Annabel (search)
+
+Annabel Church
+Annabel Fuglsang
+
+//q
+//less Costco
+//q
+//less Delta_Skymiles (nothing found)
+//q
+//less Fitness_Galaxy
+
+Annabel Church
+Oluwasegun Annabel
+
+//q
+//less Museum_of_Bash_History
+
+Annabel Church
+Oluwasegun Church
+
+//q
+//less REI
+
+Annabel Church
+
+//q
+Annabel Sun
+Annabel Fuglsang
+Annabel Church
+q
+//less TCSU_Alumni_Association
+q
+//less Terminal_City_Library
+q
+//less United_MileagePlus
+q
+## Commands Continued
+//cd ..
+//ls
+//cd interviews
+//cd ..
+//less crimescene
+//q
+//ls
+//cd ..
+
+#Git add, commit and push *(first backup)*
+
+git status
+git add .
+git status
+git commit -m"first update to solution"
+git push origin master
+
+##Command Continued
+//cd streets
+//cat buckingham place
+SEE INTERVIEW #699607 *(found interview-699607)*
+
+//cat Haley_Street
+SEE INTERVIEW #871877 *(found interview-871877)*
+
+##Command Continued
+//cd ..
+//ls
+//cd interviews
+//ls
+//cat interview-699607
+######Report -699607
+reports seeing blue honda car flee scene plate starts L337 and ends with "9"
+
+//cat interview-871877
+######Report -871877
+Mr. Fuglsang has brown hair and is not the witness from the cafe.
+
+//cd ..
+//grep -A 5 "L337" vehicles
+
+##These are the license plates matching clue descriptions. Looking
+for men 6'Ft and a Blue Honda.
+
+License Plate L3375A9
+Make: Honda
+Color: Blue
+Owner: Jeremy Bowers
+Height: 6'1"
+Weight: 204 lbs
+
+License Plate L337WR9
+Make: Honda
+Color: Blue
+Owner: Jacqui Maher
+Height: 6'2"
+Weight: 130 lbs
+
+License Plate L337DV9
+Make: Honda
+Color: Blue
+Owner: Joe Germuska
+Height: 6'2"
+Weight: 164 lbs
+
+##Command Continued
+//cd mystery
+
+###### Searching memberships based on second clue found, looking for ID'd person
+Jeremy Bowers based on his height and car type. I believe he could be the murderer
+if the ID lines up with memberships.
+
+//cd membership
+//ls
+//less AAA
+/Jeremy Bowers  (search)
+Jeremy Bowers
+
+//q
+//less Delta_Skymiles
+/Jeremy Bowers
+Jeremy Bowers
+//q
+less Museum_of_Bash_History
+/Jeremy Bowers
+Jeremy Bowers
+//q
+less Terminal_City_Library
+/Jeremy Bowers
+Jeremy Bowers
+q
+
+#Murder Mystery Solved
+######Murderer is Jeremy Bowers! Based on the evidence found, his I.D was
+located at the scene two witnesses saw Jeremy fleeing the scene.
