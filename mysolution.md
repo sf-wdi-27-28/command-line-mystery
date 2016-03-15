@@ -1,24 +1,19 @@
 cd mystery
 ls
-cat crimescene
+head -n 20 crimescene
 grep CLUE crimescene -- C
 	crimescene:CLUE: Footage from an ATM security camera is blurry but shows that the perpetrator is a tall male, at least 6'.
 	crimescene:CLUE: Found a wallet believed to belong to the killer: no ID, just loose change, and membership cards for AAA, Delta SkyMiles, the local library, and the Museum of Bash History. The cards are totally untraceable and have no name, for some reason.
 	crimescene:CLUE: Questioned the barista at the local coffee shop. He said a woman left right before they heard the shots. The name on her latte was Annabel, she had blond spiky hair and a New Zealand accent.
-cat people
+head -n 20 people
 grep Annabel people -- C
 	people:Annabel Sun	F	26	Hart Place, line 40
 	people:Oluwasegun Annabel	M	37	Mattapan Street, line 173
 	people:Annabel Church	F	38	Buckingham Place, line 179
 	people:Annabel Fuglsang	M	40	Haley Street, line 176
-cd streets
-ls
-	//shows what's inside streets
-cd ..
 head -n 40 streets/Hart_Place | tail -n 1
-	//SEE INTERVIEW #47246024
-cd interviews
-ls
+	SEE INTERVIEW #47246024
+cdcd interviews
 cat interview-47246024
 	//Ms. Sun has brown hair and is not from New Zealand.  Not the witness from the cafe.
 cd ..
@@ -35,23 +30,25 @@ cd ..
 grep -A 5 "L337" vehicles
 	Possibilities:
 	License Plate L337DV9
-Make: Honda
-Color: Blue
-Owner: Joe Germuska
-Height: 6'2"
-Weight: 164 lbs
+	Make: Honda
+	Color: Blue
+	Owner: Joe Germuska
+	Height: 6'2"
+	Weight: 164 lbs
 
-License Plate L3375A9
-Make: Honda
-Color: Blue
-Owner: Jeremy Bowers
-Height: 6'1"
-Weight: 204 lbs
+	License Plate L3375A9
+	Make: Honda
+	Color: Blue
+	Owner: Jeremy Bowers
+	Height: 6'1"
+	Weight: 204 lbs
 
 cd memberships
 ls
+cat Delta_SkyMiles AAA Terminal_City_Library Museum_of_Bash_History | grep -c "Joe Germuska"
+	Answer: 2, Not culprit
 cat Delta_SkyMiles AAA Terminal_City_Library Museum_of_Bash_History | grep -c "Jeremy Bowers"
-Answer: 4
+	Answer: 4, CULPRIT!!
 
 Culprit: Jeremy Bowers
 
