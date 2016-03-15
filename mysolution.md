@@ -16,10 +16,6 @@ Based on clues, I need to find info about Annabel in people file
 ```
 head -n 20 people
 grep Annabel people -- C
-	people:Annabel Sun	F	26	Hart Place, line 40
-	people:Oluwasegun Annabel	M	37	Mattapan Street, line 173
-	people:Annabel Church	F	38	Buckingham Place, line 179
-	people:Annabel Fuglsang	M	40	Haley Street, line 176
 ```
 
 Found two possibilities that live on Hart Place and Buckingham Place. Need to investigate Hart Place and the corresponding line number (40)
