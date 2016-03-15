@@ -1,0 +1,82 @@
+cd CLM
+cd instructions
+less crimescene
+CLUE: Footage from an ATM security camera is blurry but shows that the perpetrator is a tall male, at least 6'.
+CLUE: Found a wallet believed to belong to the killer: no ID, just loose change, and membership cards for AAA,
+Delta SkyMiles, the local library, and the Museum of Bash History. The cards are totally untraceable and have
+no name, for some reason.
+CLUE: Questioned the barista at the local coffee shop. He said a woman left right before they heard the shots.
+The name on her latte was Annabel, she had blond spiky hair and a New Zealand accent.
+hint. 1 - head command in terminal
+cd people
+less people
+/Annabel
+Annabel Church  F       38      Buckingham Place, line 179
+Annabel Fuglsang        M       40      Haley Street, line 176
+Oluwasegun Annabel      M       37      Mattapan Street, line 173
+q
+ls
+cd streets
+cd ..
+ls
+cd vehicles
+less vehicles
+
+License Plate L2E48EF
+Make: BMW
+Color: Orange
+Owner: Annabel Church
+Height: 5'5"
+Weight: 201 lbs
+
+License Plate 0O27BTD
+Make: Fiat
+Color: Yellow
+Owner: Annabel Sun
+Height: 5'0"
+Weight: 232 lbsn
+
+License Plate 20VVU2P
+Make: Mazda
+Color: Pink
+Owner: Annabel Fuglsang
+Height: 5'11"
+Weight: 241 lbs
+cd ..
+ls
+cd membership
+less AAA
+Annabel Church
+q
+less AAdvantage
+/Annabel
+Annabel Church
+Annabel Fuglsang
+q
+less Costco
+q
+less Delta_Skymiles
+q
+less Fitness_Galaxy
+Annabel Church
+Oluwasegun Annabel
+q
+less Museum_of_Bash_History
+Annabel Church
+Oluwasegun Church
+q
+less REI
+Annabel Church
+q
+Annabel Sun
+Annabel Fuglsang
+Annabel Church
+q
+less TCSU_Alumni_Association
+q
+less Terminal_City_Library
+q
+less United_MileagePlus
+q
+cd ..
+ls
