@@ -27,4 +27,63 @@ Annabel Fuglsang	M
 
 //hint5
 SEE INTERVIEW #47246024
-SEE INTERVIEW #
+SEE INTERVIEW #699607
+
+// hint6
+To find a matching license plate, or a matching car, you can use grep on the 'vehicles' file:
+grep "Honda" vehicles
+
+	grep "Blue" vehicles
+
+	grep "L337" vehicles
+
+  //hint7
+  In order to actually get information about vehicles that might match our description,
+we need to get multiple lines AROUND each match.  We can use the -A, -B, or -C option with grep:
+
+	grep -A 5 "L337" mystery/vehicles
+
+This will match the license plates that contain "L337" and, for each match, show us the five lines AFTER it.
+
+//hint8
+To see who was a member of several different groups, you can combine their membership lists into one and search against that.
+
+	cat Fitness_Galaxy AAA United_MileagePlus | grep "John Smith"
+
+If you only want to see the number of matches, you can use grep's -c option (the c must be lowercase):
+
+	cat Fitness_Galaxy AAA United_MileagePlus | grep -c "John Smith"
+
+Or you can pipe the result to 'wc -l':
+
+	cat Fitness_Galaxy AAA United_MileagePlus | grep "John Smith" | wc
+
+  //interview files
+  Ms. Sun has brown hair and is not from New Zealand.  Not the witness from the cafe.Admins-MacBook-Pro-2:interviews Admin$ cat interview-699607
+Interviewed Ms. Church at 2:04 pm.  Witness stated that she did not see anyone she could identify as the shooter, that she ran away as soon as the shots were fired.
+
+However, she reports seeing the car that fled the scene.  Describes it as a blue Honda, with a license plate that starts with "L337" and ends with "9"
+
+
+License Plate L337P89
+Make: Honda
+Color: Teal
+Owner: Mike Bostock
+Height: 6'4"
+Weight: 173 lbs
+-
+
+License Plate L337DV9
+Make: Honda
+Color: Blue
+Owner: Joe Germuska
+Height: 6'2"
+Weight: 164 lbs
+-
+License Plate L3375A9
+Make: Honda
+Color: Blue
+Owner: Jeremy Bowers
+Height: 6'1"
+Weight: 204 lbs
+-
