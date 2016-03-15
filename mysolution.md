@@ -34,3 +34,32 @@ Annabel Sun	F	26	Hart Place, line 40
 Oluwasegun Annabel	M	37	Mattapan Street, line 173
 Annabel Church	F	38	Buckingham Place, line 179
 Annabel Fuglsang	M	40	Haley Street, line 176
+
+
+# look under streets, for Hart_Place, line 40
+$ head -n 40 Hart_Place
+
+# found
+SEE INTERVIEW #47246024
+
+# looked into interview #47246024
+$ cat interview-47246024
+
+# found
+Ms. Sun has brown hair and is not from New Zealand.  Not the witness from the cafe
+
+
+# look under streets, for Buckingham_Place, line 179
+  $ head -n 179 Buckingham_Place
+
+# found
+SEE INTERVIEW #699607
+
+
+# looked into interview #699607
+$ cat interview-699607
+
+#found following
+Interviewed Ms. Church at 2:04 pm.  Witness stated that she did not see anyone she could identify as the shooter, that she ran away as soon as the shots were fired.
+
+However, she reports seeing the car that fled the scene.  Describes it as a blue Honda, with a license plate that starts with "L337" and ends with "9"
