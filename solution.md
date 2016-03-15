@@ -61,3 +61,44 @@ egrep -R '((Joe Germuska)|(Brian Boyer)|(Mike Bostock)|(Jeremy Bowers)|(John Kee
 # Not BB, wrong car manufacturer
 # JB, it is JB
 ```
+
+#Phillberts-MacBook-Pro:mystery PJC$ pwd
+#Phillberts-MacBook-Pro:mystery PJC$ grep CLUE ./crimescene
+#Phillberts-MacBook-Pro:mystery PJC$ grep Annabel ./people
+#Phillberts-MacBook-Pro:command-line-mystery PJC$ cat hint4
+#Phillberts-MacBook-Pro:mystery PJC$ head -n 173 streets/Mattapan_Street | tail -n 1
+#Phillberts-MacBook-Pro:interviews PJC$ cat interview-9437737
+#Phillberts-MacBook-Pro:mystery PJC$ head -n 179 streets/Buckingham_Place
+#Phillberts-MacBook-Pro:interviews PJC$ cat interview-699607
+#Phillberts-MacBook-Pro:interviews PJC$ ls
+#Phillberts-MacBook-Pro:mystery PJC$ cat vehicles
+#Phillberts-MacBook-Pro:mystery PJC$ grep L337 ./vehicles
+#Phillberts-MacBook-Pro:mystery PJC$ grep Honda ./vehicles
+#Phillberts-MacBook-Pro:mystery PJC$ grep L337 ./vehicles
+#Phillberts-MacBook-Pro:mystery PJC$ grep -l L337 ./vehicles
+#Phillberts-MacBook-Pro:mystery PJC$ grep -l L337ZR9 ./vehicles
+#Phillberts-MacBook-Pro:mystery PJC$ grep L337ZR9 ./vehicles
+#Phillberts-MacBook-Pro:mystery PJC$ head vehicles
+#Phillberts-MacBook-Pro:mystery PJC$ grep -A 5 L337ZR9 ./vehicles
+#Phillberts-MacBook-Pro:mystery PJC$ grep -A 5 L337P89 ./vehicles
+#Phillberts-MacBook-Pro:mystery PJC$ grep -A 5 L337GX9 ./vehicles
+#Phillberts-MacBook-Pro:mystery PJC$ grep -A 5 L337QE9 ./vehicles
+#Phillberts-MacBook-Pro:mystery PJC$ grep -A 5 L337GB9 ./vehicles
+#Phillberts-MacBook-Pro:mystery PJC$ grep -A 5 L337OI9 ./vehicles
+#Phillberts-MacBook-Pro:mystery PJC$ grep -A 5 L337X19 ./vehicles
+#Phillberts-MacBook-Pro:mystery PJC$ grep -A 5 L337539 ./vehicles
+#Phillberts-MacBook-Pro:mystery PJC$ grep -A 5 L3373U9 ./vehicles
+#Phillberts-MacBook-Pro:mystery PJC$ grep -A 5 L337369 ./vehicles
+#Phillberts-MacBook-Pro:mystery PJC$ grep -A 5 L337DV9 ./vehicles
+#Phillberts-MacBook-Pro:mystery PJC$ grep -A 5 L3375A9 ./vehicles
+#Phillberts-MacBook-Pro:mystery PJC$ grep -A 5 L337WR9 ./vehicles
+#Phillberts-MacBook-Pro:memberships PJC$ cat AAA Delta_SkyMiles Museum_of_Bash_History Terminal_City_Library | grep "Jacqui Maher"
+#Phillberts-MacBook-Pro:memberships PJC$ cat AAA Delta_SkyMiles Museum_of_Bash_History Terminal_City_Library | grep "Erika Owens"
+#Phillberts-MacBook-Pro:memberships PJC$ cat AAA Delta_SkyMiles Museum_of_Bash_History Terminal_City_Library | grep "Joe Germuska"
+#Phillberts-MacBook-Pro:memberships PJC$ cat AAA Delta_SkyMiles Museum_of_Bash_History Terminal_City_Library | grep "Jeremy Bowers"
+#Phillberts-MacBook-Pro:mystery PJC$ grep "Jacqui Maher" ./people
+#Phillberts-MacBook-Pro:mystery PJC$ grep "Jeremy Bowers" ./people
+
+
+
+# The killer is Jeremy Bowers, I thought it was Jacqui Maher, until i found out she was a she.
