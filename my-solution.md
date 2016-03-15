@@ -2,6 +2,8 @@ touch my-solution.md
 
 atom my-solution.md
 
+cd mystery
+
 grep "CLUE" ./crimescene
 #Finds clues
 *******
