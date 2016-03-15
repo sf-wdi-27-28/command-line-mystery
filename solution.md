@@ -1,6 +1,6 @@
-```zsh
+
 # Clone the initial repository
-git clone git@github.com:eerwitt/command-line-mystery.git
+git clone git@github.com:scoobaroo/command-line-mystery.git
 cd command-line-mystery
 
 # Check the status to see if anything is already marked as new (shouldn't be)
@@ -61,3 +61,29 @@ egrep -R '((Joe Germuska)|(Brian Boyer)|(Mike Bostock)|(Jeremy Bowers)|(John Kee
 # Not BB, wrong car manufacturer
 # JB, it is JB
 ```
+grep "CLUE" crimescene
+grep Annabel ./people
+less ./streets/Mattapan_Street
+less ./interviews/interview-9437737
+less ./streets/Hart_Place
+less ./interviews/interview-47246024
+less ./streets/Buckingham_Place
+less ./interviews/interview-699607
+# However, she reports seeing the car that fled the scene.  Describes it as a blue Honda, with a license plate that starts with "L337" and ends with "9"
+grep "L337..9" vehicles
+cat AAA Delta_SkyMiles Museum_of_Bash_History Terminal_City_Library
+egrep -R '((Joe Germuska)|(Brian Boyer)|(Mike Bostock)|(Jeremy Bowers)|(John Keefe)|(Al Shaw)|(Matt Waite))' ./memberships
+grep "Bowers" AAA Delta_SkyMiles Museum_of_Bash_History Terminal_City_Library
+grep Bowers people
+head -n 284 streets/Dunstable_Road | tail -n 1
+less interviews/interview-9620713
+grep Waite people
+less interviews/interview-862173
+head -n 79 streets/Alpine_Street | tail -n 1
+grep Boyer people
+head -n 183 streets/Harbor_Point_Boulevard | tail -n 1
+less interviews/interview-628618
+grep Bostock people
+head -n 287 streets/Senders_Court | tail -n 1
+less interviews/interview-290346
+# Ruled out other suspects, Jeremy Bowers is murderer
