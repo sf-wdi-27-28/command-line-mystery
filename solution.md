@@ -20,3 +20,39 @@ grep Annabel ./people
 #Annabel Sun F 26 Hart Place, line 40
 #Annabel Church F 38 Buckingham Place, line 179
 
+#hint5 says: SEE INTERVIEW #9437737
+less interview/interview-9437737 #Doesn't appear to be the witness from the cafe, who is female.
+
+#search people for Annabel Church:Interviews with Ms. Church: less interviews/interview-699607
+#Interviewed Ms. Church at 2:04 pm.  Witness stated that she did not see anyone she could identify as the shooter, that she ran away as soon as the shots were fired.However, she reports seeing the car that fled the scene.  Describes it as a blue Honda, with a license plate that starts with "L337" and ends with "9"#People who are Male, over 6’ with a Blue Honda in vehicles
+#Hint7 use grep to find L337
+#Over 6’
+#Memberships:
+./memberships/AAA:Al Shaw
+./memberships/AAA:Joe Germuska
+./memberships/AAA:Jeremy Bowers
+./memberships/AAA:John Keefe
+./memberships/AAA:Matt Waite
+./memberships/AAA:Brian Boyer
+./memberships/AAA:Mike Bostock
+./memberships/Delta_SkyMiles:Matt Waite
+./memberships/Delta_SkyMiles:Mike Bostock
+./memberships/Delta_SkyMiles:Brian Boyer
+./memberships/Delta_SkyMiles:Jeremy Bowers
+./memberships/Museum_of_Bash_History:Jeremy Bowers
+./memberships/Museum_of_Bash_History:Brian Boyer
+./memberships/Museum_of_Bash_History:Matt Waite
+./memberships/Museum_of_Bash_History:Mike Bostock
+./memberships/Terminal_City_Library:Joe Germuska
+./memberships/Terminal_City_Library:John Keefe
+./memberships/Terminal_City_Library:Matt Waite
+./memberships/Terminal_City_Library:Jeremy Bowers
+./memberships/Terminal_City_Library:Mike Bostock
+./memberships/Terminal_City_Library:Al Shaw
+./memberships/Terminal_City_Library:Brian Boyer
+
+#Al: drives a red car
+#Joe: drives a pink car
+#Jeremy: drives a blue honda plate L3375a9 so he is the shooter!
+#John: drives an orange car
+#Matt: drives a blue toyota
