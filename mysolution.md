@@ -25,3 +25,12 @@ CLUE: Found a wallet believed to belong to the killer: no ID, just loose change,
 Crime Scene Report #575776622208
 ********
 CLUE: Questioned the barista at the local coffee shop. He said a woman left right before they heard the shots. The name on her latte was Annabel, she had blond spiky hair and a New Zealand accent.
+
+# look for Annabel in people
+$ grep Annabel people
+
+# found following
+Annabel Sun	F	26	Hart Place, line 40
+Oluwasegun Annabel	M	37	Mattapan Street, line 173
+Annabel Church	F	38	Buckingham Place, line 179
+Annabel Fuglsang	M	40	Haley Street, line 176
