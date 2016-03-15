@@ -4,6 +4,8 @@
 //CLUE
 //if stuck open "hint"
 
+#THE COMMAND LINE MYSTERY
+
 $ grep CLUE crimescene
 
 CLUE: Footage from an ATM security camera is blurry but shows that the perpetrator is a tall male, at least 6'.
