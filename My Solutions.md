@@ -25,3 +25,14 @@ Annabel Fuglsang	M	40	Haley Street, line 176
 
 head -n 173 streets/Mattapan_Street | tail -n 1
 // got SEE INTERVIEW #9437737
+
+less interviews/interview-9437737
+// Doesn't appear to be the witness from the cafe, who is female.
+
+head -n 179 streets/Buckingham_Place | tail -n 1
+// see interview 699607
+
+less interviews/interview-699607
+//Interviewed Ms. Church at 2:04 pm.  Witness stated that she did not see anyone she could identify as the shooter, that she ran away as soon as the shots were fired.
+
+However, she reports seeing the car that fled the scene.  Describes it as a blue Honda, with a license plate that starts with "L337" and ends with "9"
