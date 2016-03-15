@@ -9,6 +9,21 @@ git status
 # Edit my solution file
 subl solution.md
 
+# terminal commands
+Terminal Commands
+grep "CLUE" crimescene --context=5
+head -n 20 people
+grep "Annabel" people --context 5
+head -n 179 Buckingham_Place | tail -n 1
+cat interview-699607
+head -n 40 Hart_Place | tail -n 1
+cat interview-47246024
+grep -A 5 "L337" mystery/vehicles
+cat AAA Delta_SkyMiles Terminal_City_Library Museum_of_Bash_History | grep -c "Jeremy Bowers"
+
+Culprit = Jeremy Bowers
+
+
 # Commit initial solution
 git add solution.md
 git commit -a
