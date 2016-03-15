@@ -1,6 +1,52 @@
   cd mystery
+  cd ..
+  less hint 1
+  less hint 2
+  cd mystery
   grep "CLUE" *
-#used 'grep' command to find three clues in ~/wdi/command-line-mystery/mystery/crimescene
+#used command to find three clues in ~/wdi/command-line-mystery/mystery/crimescene
+  cd ..
+  less hint3
+  less hint4
   cd mystery
   grep "Annabel"*
-#used grep to find Annabel's information in ~/wdi/command-line-mystery/mystery/people
+#used to find Annabel's information in ~/wdi/command-line-mystery/mystery/people
+  cd ..
+  less hint5
+  less hint6
+  less hint7
+  cd mystery
+  head -n 173 streets/Mattapan_Street | tail -n 1
+#found interview clue on line 173 of streets/Mattapan_Street
+  less  interviews/interview-9437737
+#found clue that suspect does not appear to meet Annabel's description
+#referred back to clues from hint 6 for vehicle info, and decided to look at the structure of the vehicle file
+  head 20 vehicles
+#made note of structure for proper amount of information
+  grep -A 6 "L337" *
+#used to display 6 lines of information pertaining to vehicles containing "L337" in the license plate number
+#looked for owners of blue Honda accords that were at least 6'.. Erika Owens, Joe Germuska, Jeremy Bowers, Jacqui Maher
+#referred back to original 3 clues and decided to look into memberships
+  cd memberships
+  grep "Erika Owens" AAA
+#Erika not found under AAA Memberships, she's out!
+  grep "Joe Germuska" AAA
+#Joe found under AAA memberships
+  grep "Jeremy Bowers" AAA
+#Jeremy found under AAA memberships
+  grep "Jacqui Maher" AAA
+#Jacqui found under AAA memberships
+  grep "Joe Germuska" Delta_Skymiles
+#Joe not found under Delta_Skymiles memberships! Joe is out!
+  grep "Jeremy Bowers" Delta_Skymiles
+#Jeremy found under Delta_Skymiles memberships
+  grep "Jacqui Maher" Delta_Skymiles
+#Jacqui found under Delta_Skymiles memberships
+  grep "Jeremy Bowers" Terminal_City_Library
+#Jeremy found under library memberships
+  grep "Jacqui Maher" Terminal_City_Library
+#Jacqui found under library memberships
+  grep "Jeremy Bowers" Museum_of_Bash_History
+#Jeremy found under museum memberships
+  grep "Jacqui Maher" Museum_of_Bash_History
+# Jacqui found under museum memberships
