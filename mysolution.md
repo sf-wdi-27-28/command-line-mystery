@@ -25,7 +25,6 @@ Got this response: SEE INTERVIEW 47246024. Need to search interviews directory f
 ```
 cd interviews
 cat interview-47246024
-	//Ms. Sun has brown hair and is not from New Zealand.  Not the witness from the cafe.
 ```
 
 No dice! Need to backtrack and investigate Buckingham Place
