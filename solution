@@ -1,0 +1,6 @@
+  cd mystery
+  grep "CLUE" *
+#used 'grep' command to find three clues in ~/wdi/command-line-mystery/mystery/crimescene
+  cd mystery
+  grep "Annabel"*
+#used grep to find Annabel's information in ~/wdi/command-line-mystery/mystery/people
