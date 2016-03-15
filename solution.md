@@ -1,0 +1,22 @@
+#hint1: head -n 20 people shows first 20 people
+#hint2: grep “CLUE” crimescene
+#hint3: use ‘head’ on files people and vehicles to see where witness Annabel lives
+#hint4: grep Annabel people
+#hint5: head -n 173 streets/Mattapan_Street | tail -n 1
+#hint6: grep "Honda" vehicles grep "Blue" vehicles grep "L337" vehicles - use ‘head’ on the file
+#hint7: grep -A 5 "L337" mystery/vehicles (-A will show 5 lines after L337)
+#hint8: cat Fitness_Galaxy AAA United_MileagePlus | grep "John Smith" (cat Fitness_Galaxy AAA United_MileagePlus | grep -c "John Smith”) cat Fitness_Galaxy AAA United_MileagePlus | grep "John Smith" | wc -l
+
+#cd wdi
+#cd command-line-mystery/
+	#cheatsheet.md hint1-8 instructions mystery read.md solution.md
+#cd mystery
+	#grep CLUE crimescene
+CLUE: Footage from an ATM security camera is blurry but shows that the perpetrator is a tall male, at least 6'.CLUE: Found a wallet believed to belong to the killer: no ID, just loose change, and membership cards for AAA, Delta SkyMiles, the local library, and the Museum of Bash History. The cards are totally untraceable and have no name, for some reason.CLUE: Questioned the barista at the local coffee shop. He said a woman left right before they heard the shots. The name on her latte was Annabel, she had blond spiky hair and a New Zealand accent.#Suspect 6’, Male, AAA, Delta SkyMiles, Museum of Bash History
+#Witness Annabel, Female, blond, New Zealand accent
+
+grep Annabel ./people
+
+#Annabel Sun F 26 Hart Place, line 40
+#Annabel Church F 38 Buckingham Place, line 179
+
