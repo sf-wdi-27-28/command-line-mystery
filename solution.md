@@ -1,4 +1,4 @@
-```zsh
+
 # Clone the initial repository
 git clone git@github.com:eerwitt/command-line-mystery.git
 cd command-line-mystery
@@ -25,7 +25,7 @@ grep Annabel ./people
 
 # Knock on her door
 less streets/Mattapan_Street
-# Goto line in file using less: http://stackoverflow.com/questions/8586648/going-to-a-specific-line-number-using-less-in-unix
+# Goto line in file using less:
 # in less type 173g
 # Try different interviews
 less interviews/interview-47246024
@@ -60,4 +60,12 @@ egrep -R '((Joe Germuska)|(Brian Boyer)|(Mike Bostock)|(Jeremy Bowers)|(John Kee
 # Not MW, wrong car manufacturer
 # Not BB, wrong car manufacturer
 # JB, it is JB
-```
+
+#OTHER COMMANDS USED
+cat interview-9437737
+less streets/Hart_Place
+cat interviews/interview-47246024
+grep INTERVIEW streets/Buckingham_Place
+grep -A 5 "L337" vehicles
+
+# Perpetrator is JEREMY BOWERS
