@@ -1,58 +1,63 @@
+## My Investigation
+Go to mystery directory to get started
+```
 cd mystery
 ls
-head -n 20 crimescene
-grep CLUE crimescene -- C
-	crimescene:CLUE: Footage from an ATM security camera is blurry but shows that the perpetrator is a tall male, at least 6'.
-	crimescene:CLUE: Found a wallet believed to belong to the killer: no ID, just loose change, and membership cards for AAA, Delta SkyMiles, the local library, and the Museum of Bash History. The cards are totally untraceable and have no name, for some reason.
-	crimescene:CLUE: Questioned the barista at the local coffee shop. He said a woman left right before they heard the shots. The name on her latte was Annabel, she had blond spiky hair and a New Zealand accent.
+```
+
+Peak inside crimescene file
+`head -n 20 crimescene`
+
+Search for CLUEs within the crimescene file
+`grep CLUE crimescene -- C`
+
+
+Based on clues, I need to find info about Annabel in people file
+```
 head -n 20 people
 grep Annabel people -- C
 	people:Annabel Sun	F	26	Hart Place, line 40
 	people:Oluwasegun Annabel	M	37	Mattapan Street, line 173
 	people:Annabel Church	F	38	Buckingham Place, line 179
 	people:Annabel Fuglsang	M	40	Haley Street, line 176
-head -n 40 streets/Hart_Place | tail -n 1
-	SEE INTERVIEW #47246024
-cdcd interviews
+```
+
+Found two possibilities that live on Hart Place and Buckingham Place. Need to investigate Hart Place and the corresponding line number (40)
+`head -n 40 streets/Hart_Place | tail -n 1`
+
+Got this response: SEE INTERVIEW 47246024. Need to search interviews directory for more clues.
+```
+cd interviews
 cat interview-47246024
 	//Ms. Sun has brown hair and is not from New Zealand.  Not the witness from the cafe.
+```
+
+No dice! Need to backtrack and investigate Buckingham Place
+```
 cd ..
 head -n 179 streets/Buckingham_Place | tail -n 1
-	//SEE INTERVIEW #699607
+```
 
+Got this response: SEE INTERVIEW 699607. Need to search interviews directory.
+```
 cd interviews
 cat interview-699607
-	Interviewed Ms. Church at 2:04 pm.  Witness stated that she did not see anyone she could identify as the shooter, that she ran away as soon as the shots were fired.
+```
 
-	However, she reports seeing the car that fled the scene.  Describes it as a blue Honda, with a license plate that starts with "L337" and ends with "9"
-
+Apparently, the killer owns a blue Honda, with a license plate that starts with "L337" and ends with "9". Need to search vehicles for an owner that matches the witness description
+```
 cd ..
 grep -A 5 "L337" vehicles
-	Possibilities:
-	License Plate L337DV9
-	Make: Honda
-	Color: Blue
-	Owner: Joe Germuska
-	Height: 6'2"
-	Weight: 164 lbs
+```
 
-	License Plate L3375A9
-	Make: Honda
-	Color: Blue
-	Owner: Jeremy Bowers
-	Height: 6'1"
-	Weight: 204 lbs
-
+Based on the owner info there are two possibilities: Joe Germuska and Jeremy Bowers (both are males and taller than 6'). Need to check if these two males have all the memberships specified in the initial clues.
+```
 cd memberships
 ls
 cat Delta_SkyMiles AAA Terminal_City_Library Museum_of_Bash_History | grep -c "Joe Germuska"
-	Answer: 2, Not culprit
-cat Delta_SkyMiles AAA Terminal_City_Library Museum_of_Bash_History | grep -c "Jeremy Bowers"
-	Answer: 4, CULPRIT!!
+```
 
-Culprit: Jeremy Bowers
+Joe Germuska only has two of these memberships. He is not the culprit.
+`cat Delta_SkyMiles AAA Terminal_City_Library Museum_of_Bash_History | grep -c "Jeremy Bowers"`
 
-
-
-
-
+Jeremy Bowers has all the memberships. He is the culprit.
