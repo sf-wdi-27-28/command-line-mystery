@@ -2,6 +2,13 @@ Morgan Sharif
 WDI 28
 Command Line Mystery
 
+w01 d01
+
+comfort: 4/5
+completeness: 5/5
+Had some trouble part-way through with grep commands, but was very satisfied when I was able to run grep against multiple files in one line - making the last cross-referencing part much more straightforward. I would definitely like to learn about more complex and specific expressions to target information.
+
+
 	Legend:
 	>> action summary
 	|| mystery notes
