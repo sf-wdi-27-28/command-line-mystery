@@ -27,3 +27,18 @@ grep -A 5 "L337" vehicles
 Jacqui Mahr
 Jeremy Bowers
 Joe Germuska
+
+cat AAA Delta_SkyMiles Terminal_City_Library Museum_of_Bash_History | grep "Joe Germuska"
+Joe Germuska
+Joe Germuska
+
+cat AAA Delta_SkyMiles Terminal_City_Library Museum_of_Bash_History | grep "Jeremy Bowers"
+Jeremy Bowers
+Jeremy Bowers
+Jeremy Bowers
+Jeremy Bowers
+
+cat AAA Delta_SkyMiles Terminal_City_Library Museum_of_Bash_History | grep "Jacqui Mahr"
+//nothing
+
+//Looks like Jeremy Bowers has som' 'splainin' to do
