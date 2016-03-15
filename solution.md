@@ -3,61 +3,63 @@
 git clone git@github.com:eerwitt/command-line-mystery.git
 cd command-line-mystery
 
-# Check the status to see if anything is already marked as new (shouldn't be)
-git status
-
-# Edit my solution file
-subl solution.md
-
-# Commit initial solution
-git add solution.md
-git commit -a
-
 # Start reading the instructions
-less instructions
+cat instructions
 
 # Check for clues in the mystery
 cd mystery
-grep CLUE ./crimescene
+grep CLUE crimescene
 
 # Search for person with the Latte
-grep Annabel ./people
+grep Annabel people
 
-# Knock on her door
-less streets/Mattapan_Street
-# Goto line in file using less: http://stackoverflow.com/questions/8586648/going-to-a-specific-line-number-using-less-in-unix
-# in less type 173g
-# Try different interviews
-less interviews/interview-47246024
+# Find the right Annabel
+open Hart_Place
+open Buckingham_Place
 
-less interviews/interview-699607
+# Read Interviews 
+cd ..
+cd interviews 
+ls
+open interview-47246024
+open interview-699607
+
 
 # Checking for vehicle
-less vehicles
-# Search in less for vehicles starting with L337 and ending in 9
-# in less /L337..9
+cd ..
+grep -A5 "L337" vehicles
+
+# Check which have Blue Honda's
+# Eliminate Katie, Mike, John, Matt, Brian, Al, and Miranda
+# Eliminate clear female names Erika and Heather
 # Check which are over 6'
-# Katie Park
-# Mike Bostock
-# John Keefe
-# Erika Owens
-# Matt Waite
-# Brian Boyer
-# Al Shaw
-# Miranda Mulligan
+# Eliminate Aaron
+cd ..
+
+# Check for memberships using command that searches all subdirectories and their files for key words (currently in Mystery directory)
+
 # Joe Germuska
+grep -nr \w*Germaska\w* .
+# Eliminate Joe because he is only a member of AAA
+
 # Jeremy Bowers
+grep -nr \w*Bowers\w* .
+
 # Jacqui Maher
+grep -nr \w*Jacqui\w* .
 
-# Check which is male/female and get their names
-egrep '((Katie Park)|(Mike Bostock)|(John Keefe)|(Erika Owens)|(Matt Waite)|(Brian Boyer)|(Al Shaw)|(Miranda Mulligan)|(Joe Germuska)|(Jeremy Bowers)|(Jacqui Maher))' ./people | grep '\tM\t' | cut -f1
+# We found their adresses, go there and see what they have to say
+cd streets
+open Andover_Road
+open Dunstable_Road
+cd..
 
-# Limit down by membership
-egrep -R '((Joe Germuska)|(Brian Boyer)|(Mike Bostock)|(Jeremy Bowers)|(John Keefe)|(Al Shaw)|(Matt Waite))' ./memberships
+# Read their interviews files
+cd interviews 
+open interview-904020
+open interview-9620713
 
-# (Jeremy Bowers)|(Brian Boyer)|(Mike Bostock)|(Matt Waite)
-# Not MB, wrong car color
-# Not MW, wrong car manufacturer
-# Not BB, wrong car manufacturer
-# JB, it is JB
+# Eliminate Jacqui, Female and wasnt in town
+
+# Jeremy Bowers, He is the only male over 6ft with a blue Honda that match the lisence plates; and he is a member at to all the places the  memeberships cards found belong to. 
 ```
