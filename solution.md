@@ -1,63 +1,84 @@
-```zsh
-# Clone the initial repository
-git clone git@github.com:eerwitt/command-line-mystery.git
-cd command-line-mystery
+# Entered homework directory
+cd ~/wdi/command-line-mystery/
 
-# Check the status to see if anything is already marked as new (shouldn't be)
-git status
+# Opened "readme"
+atom readme.md
 
-# Edit my solution file
-subl solution.md
+# Added "solution" file
+touch solution.md
 
-# Commit initial solution
-git add solution.md
-git commit -a
+# Renamed "solution" file to keep as a reference if needed
+mv solution.md answer.md
 
-# Start reading the instructions
-less instructions
+# Added new "solution" file
+touch solution.md
 
-# Check for clues in the mystery
+# Opened "instructions"
+cat instructions
+
+# Opened "cheat sheet"
+atom cheatsheet.md
+
+# Entered "mystery" sub-directory
 cd mystery
+ls
+
+# Searched for "CLUE"
 grep CLUE ./crimescene
 
-# Search for person with the Latte
+# Opened Hint1
+cd -
+cat hint1
+
+# Cross-referenced memberships found in killer's wallet with the name "Annabel" found on cup
+cd -
+ls
+cd memberships
+grep Annabel ./AAA
+grep Annabel ./Delta_Skymiles
+grep Annabel ./Terminal_City_Library
+grep Annabel ./Museum_of_Bash_History
+
+# Found "Annabel Church" multiple times
+
+# Searched for "Annabel Church" in "people" sub-directory
+cd -
 grep Annabel ./people
 
-# Knock on her door
-less streets/Mattapan_Street
-# Goto line in file using less: http://stackoverflow.com/questions/8586648/going-to-a-specific-line-number-using-less-in-unix
-# in less type 173g
-# Try different interviews
-less interviews/interview-47246024
+# Found Annabel Church's information
 
-less interviews/interview-699607
+# Opened hints
+cd ~/wdi/command-line-mystery/
+cat hint2
+cat hint3
+cat hint4
+cat hint5
 
-# Checking for vehicle
-less vehicles
-# Search in less for vehicles starting with L337 and ending in 9
-# in less /L337..9
-# Check which are over 6'
-# Katie Park
-# Mike Bostock
-# John Keefe
-# Erika Owens
-# Matt Waite
-# Brian Boyer
-# Al Shaw
-# Miranda Mulligan
-# Joe Germuska
-# Jeremy Bowers
-# Jacqui Maher
+# "Interviewed" Annabel Church
+cd mystery
+head -n 179 streets/Buckingham_Place | tail -n 1
+cd interviews
+ls
+cat interview-699607
 
-# Check which is male/female and get their names
-egrep '((Katie Park)|(Mike Bostock)|(John Keefe)|(Erika Owens)|(Matt Waite)|(Brian Boyer)|(Al Shaw)|(Miranda Mulligan)|(Joe Germuska)|(Jeremy Bowers)|(Jacqui Maher))' ./people | grep '\tM\t' | cut -f1
+# Filtered out vehicles using description of Getaway Car
+cd -
+grep -A 5 "L337" ./vehicles | grep -A 4 "Honda" | grep -A 3 "Blue"
 
-# Limit down by membership
-egrep -R '((Joe Germuska)|(Brian Boyer)|(Mike Bostock)|(Jeremy Bowers)|(John Keefe)|(Al Shaw)|(Matt Waite))' ./memberships
+# Remaining suspects that fit description of male, at least 6' tall:
+  #Joe Germuska
+  #Jeremy Bowers
 
-# (Jeremy Bowers)|(Brian Boyer)|(Mike Bostock)|(Matt Waite)
-# Not MB, wrong car color
-# Not MW, wrong car manufacturer
-# Not BB, wrong car manufacturer
-# JB, it is JB
-```
+# Cross referenced names with membership cards
+cd memberships
+grep Joe ./AAA
+grep Joe ./Delta_SkyMiles (Joe not found)
+grep Jeremy ./AAA
+grep Jeremy ./Delta_SkyMiles
+grep Jeremy ./Terminal_City_Library
+grep Jeremy ./Museum_of_Bash_History
+
+#Jeremy belongs to all. Therefore...
+murderer === Jeremy Bowers
+
+
