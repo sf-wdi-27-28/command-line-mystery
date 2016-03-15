@@ -1,3 +1,40 @@
+List of commands used to solve "Command Line Mystery" (please note that I was part of a group that worked cooperatively, so the list is not entirely exhaustive):
+cat hint8
+cat hint7
+cat hint6
+cat hint5
+cat hint4
+cat hint3
+cat hint2
+cat hint1
+head -n 284 streets/Dunstable_Road | tail -n 1
+grep "Jeremy" people
+grep "Jeremy" AAA
+grep "Jeremy" Delta_SkyMiles
+grep "Joel” Delta_SkyMiles
+cd memberships
+grep "Delta" memberships
+pwd
+ls mystery
+grep "Annabel" people
+grep "Jeremy" people
+cat vehicles
+head vehicles
+cat interviews
+head n-40 people
+head -n30 people
+grep "CLUE" crimescene
+cat cheatsheet.md
+cat readme.md
+cd command-line-mystery/
+cd wdi
+grep man
+
+JEREMY BOWERS
+
+(Everything that follows was included in the file when I opened it.)
+
+
 ```zsh
 # Clone the initial repository
 git clone git@github.com:eerwitt/command-line-mystery.git
