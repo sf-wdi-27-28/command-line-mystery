@@ -1,27 +1,49 @@
-cd CLM
-cd instructions
-less crimescene
+#Command Line Mystery
+###### Solved by: Adam Reid
+
+##CLUES
+After reading instructions, I made my way through Terminal with these commands
+to find the clues.
+
+//cd command-line-mystery
+//ls
+//cd instructions
+//cat instructions
+//cd ..
+//cd mystery
+//less crimescene
+
+* I used a shortcut from google "/" to search for CLUE in less crimescene.
+##Clues
 CLUE: Footage from an ATM security camera is blurry but shows that the perpetrator is a tall male, at least 6'.
 CLUE: Found a wallet believed to belong to the killer: no ID, just loose change, and membership cards for AAA,
 Delta SkyMiles, the local library, and the Museum of Bash History. The cards are totally untraceable and have
 no name, for some reason.
 CLUE: Questioned the barista at the local coffee shop. He said a woman left right before they heard the shots.
 The name on her latte was Annabel, she had blond spiky hair and a New Zealand accent.
+
+**Looked up Hint 1**
 hint. 1 - head command in terminal
-cd people
-less people
-/Annabel
-Annabel Church  F       38      Buckingham Place, line 179
+
+## Commands Continued
+//cd people
+//less people
+/Annabel *(search Annabel)*
+
+## People found from CLUES, named Annabel and there details
+Annabel Church          F       38      Buckingham Place, line 179
 Annabel Fuglsang        M       40      Haley Street, line 176
 Oluwasegun Annabel      M       37      Mattapan Street, line 173
-q
-ls
-cd streets
-cd ..
-ls
-// cd vehicles , Looked in Vehicles
-less vehicles
 
+##Commands Continued
+//ls
+//cd streets
+//cd ..
+//ls
+// cd vehicles , Looked in Vehicles
+//less vehicles
+
+## Vehicles information
 License Plate L2E48EF
 Make: BMW
 Color: Orange
