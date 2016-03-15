@@ -50,3 +50,6 @@
 #Jeremy found under museum memberships
   grep "Jacqui Maher" Museum_of_Bash_History
 # Jacqui found under museum memberships
+# Thinking the suspect is Jeremy because Jacqui could possibly be a female, but decided to check final to be sure.
+# No further information.. Declaring culprit..
+CULPRIT = JEREMY BOWERS
