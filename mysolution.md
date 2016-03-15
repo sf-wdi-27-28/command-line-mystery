@@ -21,4 +21,5 @@ grep -A 5 "L337" mystery/vehicles --> Joe Germuska | Jeremy Bowers
 9. search for the name and memberships found in the wallet in the memberships folder and check which person had all 4 memberships:
 cat AAA Delta_SkyMiles Terminal_City_Library Museum_of_Bash_History  | grep -c "Joe Germuska"
 cat AAA Delta_SkyMiles Terminal_City_Library Museum_of_Bash_History  | grep -c "Jeremy Bowers"
-cat AAA Delta_SkyMiles Terminal_City_Library Museum_of_Bash_History  | grep -c "Jacqui Maher"
+
+10. getting 4 matches for Jeremy Bowers --> he is the killer!!
