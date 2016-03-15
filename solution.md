@@ -61,3 +61,32 @@ egrep -R '((Joe Germuska)|(Brian Boyer)|(Mike Bostock)|(Jeremy Bowers)|(John Kee
 # Not BB, wrong car manufacturer
 # JB, it is JB
 ```
+
+console log:
+  less hint1
+  less
+
+
+
+////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\
++6 foot tall male
+membership cards:
+  AAA
+  Delta
+  Library
+  Musium of bash history
+Annabel Church
+    Lives at 38	Buckingham Place, line 179
+    Interviewed Ms. Church at 2:04 pm.  Witness stated that she did not see anyone she could identify as the shooter, that she ran away as soon as the shots were fired. However, she reports seeing the car that fled the scene.  Describes it as a blue Honda, with a license plate that starts with "L337" and ends with "9"
+  spikey hair
+  new zealand accent
+Joe Germuska
+  Has AAA and Library
+Jeremy Bowers
+  has Library and AAA
+  less interview-9620713
+    Home appears to be empty, no answer at the door. After questioning neighbors, appears that the occupant may have left for a trip recently. Considered a suspect until proven otherwise, but would have to eliminate other suspects to confirm.
+    interview-9620713 (END)"
+
+
+  IT WAS JEREMY BOWERS!!!
