@@ -20,3 +20,10 @@ cat interview-699607
 Interviewed Ms. Church at 2:04 pm.  Witness stated that she did not see anyone she could identify as the shooter, that she ran away as soon as the shots were fired.
 
 However, she reports seeing the car that fled the scene.  Describes it as a blue Honda, with a license plate that starts with "L337" and ends with "9"
+
+grep -A 5 "L337" vehicles
+//manually went through the list of approx. 15 and weeded out all but three men from the previous clues
+
+Jacqui Mahr
+Jeremy Bowers
+Joe Germuska
