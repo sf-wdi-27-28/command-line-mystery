@@ -77,19 +77,13 @@ grep "Bowers" AAA Delta_SkyMiles Museum_of_Bash_History Terminal_City_Library
 grep Bowers people
 head -n 284 streets/Dunstable_Road | tail -n 1
 less interviews/interview-9620713
-# Matches our profile, except car does not match witness accounts.
-Does Waite own a second car?  If so, he may be a suspect.  Otherwise is not a suspec
 grep Waite people
+less interviews/interview-862173
 head -n 79 streets/Alpine_Street | tail -n 1
 grep Boyer people
 head -n 183 streets/Harbor_Point_Boulevard | tail -n 1
 less interviews/interview-628618
-# Fits the profile, except for the make of his car.  Should be considered a suspect if and only if there is evidence Boyer owns a second car.
 grep Bostock people
 head -n 287 streets/Senders_Court | tail -n 1
 less interviews/interview-290346
-# Drives a similar car to the description.
-Is a SkyMiles, TCPL, Museum of Bash History, and AAA member.
-Bostock is 6' 4", easily tall enough to match the camera footage.
-However, upon questioning, Bostock can prove that he was out of town on the morning of the murder, multiple witnesses and credit card transactions confirm.
 # Ruled out other suspects, Jeremy Bowers is murderer
