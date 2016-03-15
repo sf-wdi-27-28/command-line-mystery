@@ -61,3 +61,39 @@ egrep -R '((Joe Germuska)|(Brian Boyer)|(Mike Bostock)|(Jeremy Bowers)|(John Kee
 # Not BB, wrong car manufacturer
 # JB, it is JB
 ```
+
+cd wdi
+
+cd command-line-mystery
+
+touch solution.md
+
+cat instructions
+
+cd mystery
+
+cat crimescene
+
+grep CLUE crimescene --context=4
+
+grep Annabel people
+
+head -n 179 streets/Buckingham_Place | tail -n 1
+
+// see interview #699607
+
+cd interview
+
+cat interview-699607
+
+//blue Honda, license plate head -n L337
+
+grep -A 5 "L337" vehicles
+
+// Jeremy Bowers .... Joe Germuska
+
+cd memberships
+
+cat Fitness_Galaxy AAA United_MileagePlus | grep "Joe Germuska" | wc -l
+
+cat Fitness_Galaxy AAA United_MileagePlus | grep "Jeremy Bowers" | wc -l
