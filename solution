@@ -44,6 +44,8 @@ Oluwasegun Annabel      M       37      Mattapan Street, line 173
 //less vehicles
 
 ## Vehicles information
+Vehicles that are registered to people named Annabel.
+
 License Plate L2E48EF
 Make: BMW
 Color: Orange
@@ -64,70 +66,102 @@ Color: Pink
 Owner: Annabel Fuglsang
 Height: 5'11"
 Weight: 241 lbs
-cd ..
-ls
-// cd membership, Viewed which Annabel's had memberships
-less AAA
+
+##Command Continued
+//cd ..
+//ls
+// cd membership,
+
+##Memberships with Annabel name.
+
+Viewed which Annabel's had memberships
+
+//less AAA
 Annabel Church
-q
-less AAdvantage
-/Annabel
+
+//q
+//less AAdvantage
+/Annabel (search)
+
 Annabel Church
 Annabel Fuglsang
-q
-less Costco
-q
-less Delta_Skymiles
-q
-less Fitness_Galaxy
+
+//q
+//less Costco
+//q
+//less Delta_Skymiles (nothing found)
+//q
+//less Fitness_Galaxy
+
 Annabel Church
 Oluwasegun Annabel
-q
-less Museum_of_Bash_History
+
+//q
+//less Museum_of_Bash_History
+
 Annabel Church
 Oluwasegun Church
-q
-less REI
+
+//q
+//less REI
+
 Annabel Church
-q
+
+//q
 Annabel Sun
 Annabel Fuglsang
 Annabel Church
 q
-less TCSU_Alumni_Association
+//less TCSU_Alumni_Association
 q
-less Terminal_City_Library
+//less Terminal_City_Library
 q
-less United_MileagePlus
+//less United_MileagePlus
 q
-cd ..
-ls
-cd interviews
-cd ..
-less crimescene
-q
-ls
-cd ..
+## Commands Continued
+//cd ..
+//ls
+//cd interviews
+//cd ..
+//less crimescene
+//q
+//ls
+//cd ..
+
+#Git add, commit and push *(first backup)*
+
 git status
 git add .
 git status
 git commit -m"first update to solution"
 git push origin master
-cd streets
-cat buckingham place
-SEE INTERVIEW #699607
-cat Haley_Street
-SEE INTERVIEW #871877
-cd ..
-ls
-cd interviews
-ls
-cat interview-699607
+
+##Command Continued
+//cd streets
+//cat buckingham place
+SEE INTERVIEW #699607 *(found interview-699607)*
+
+//cat Haley_Street
+SEE INTERVIEW #871877 *(found interview-871877)*
+
+##Command Continued
+//cd ..
+//ls
+//cd interviews
+//ls
+//cat interview-699607
+######Report -699607
 reports seeing blue honda car flee scene plate starts L337 and ends with "9"
-cat interview-871877
+
+//cat interview-871877
+######Report -871877
 Mr. Fuglsang has brown hair and is not the witness from the cafe.
-cd ..
-grep -A 5 "L337" vehicles
+
+//cd ..
+//grep -A 5 "L337" vehicles
+
+##These are the license plates matching clue descriptions. Looking
+for men 6'Ft and a Blue Honda.
 
 License Plate L3375A9
 Make: Honda
@@ -150,25 +184,33 @@ Owner: Joe Germuska
 Height: 6'2"
 Weight: 164 lbs
 
-cd mystery
-cd membership
-ls
-less AAA
+##Command Continued
+//cd mystery
+
+###### Searching memberships based on second clue found, looking for ID'd person
+Jeremy Bowers based on his height and car type. I believe he could be the murderer
+if the ID lines up with memberships.
+
+//cd membership
+//ls
+//less AAA
+/Jeremy Bowers  (search)
+Jeremy Bowers
+
+//q
+//less Delta_Skymiles
 /Jeremy Bowers
 Jeremy Bowers
-q
-less Delta_Skymiles
-/Jeremy Bowers
-Jeremy Bowers
-q
+//q
 less Museum_of_Bash_History
 /Jeremy Bowers
 Jeremy Bowers
-q
+//q
 less Terminal_City_Library
 /Jeremy Bowers
 Jeremy Bowers
 q
 
-Murderer is Jeremy Bowers! Based on the evidence found, his I.D was located at the scene
-two witnesses saw Jeremy fleeing the scene.
+#Murder Mystery Solved
+######Murderer is Jeremy Bowers! Based on the evidence found, his I.D was
+located at the scene two witnesses saw Jeremy fleeing the scene.
