@@ -61,3 +61,51 @@ egrep -R '((Joe Germuska)|(Brian Boyer)|(Mike Bostock)|(Jeremy Bowers)|(John Kee
 # Not BB, wrong car manufacturer
 # JB, it is JB
 ```
+
+cd wdi
+cd command-line-mystery
+//first 20 people in line
+head -n 20 people
+
+//CLUEs tall male 6ft, small change in wallet with memberships at AAA Delta etc.
+//witness name Annabel from NZ
+grep CLUE crimescene --context=4
+
+//tracking down Annabel
+head Annabel people
+head Annabel vehicles
+
+//finding Annabel's address
+grep "Annabel" people
+
+//changing to interviews
+cd interviews
+
+//interview two people
+head -n 173 streets/Mattapan_Street | tail -n 1
+
+//open interview
+cat interview-9437737
+cd ..
+cd vehicles
+
+//finding matching vehicles
+head grep "Honda" vehicles
+head grep "Blue" vehicles
+head grep "L337" vehicles
+cd ..
+
+//matching informations
+grep -A 5 "L337" mystery/vehicles
+
+//finding membership from various groups
+cd mystery
+cd memberships
+cat AAA Delta_SkyMiles Museum_of_Bash_History | grep "Joe Germuska"
+Joe Germuska
+AAA Delta_SkyMiles Museum_of_Bash_History | grep "Jeremy Bowers"
+Jeremy Bowers
+Jeremy Bowers
+Jeremy Bowers
+
+The solution is Jeremy Bowers
