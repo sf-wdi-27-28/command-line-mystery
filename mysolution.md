@@ -1,30 +1,29 @@
 
-/*Fork repo and clone it to wdi folder*/
+# Fork repo and clone it to wdi folder
+git clone git@github.com:hermchan/command-line-mystery.git
 cd command-line-mystery
 
-Checked what other files are in command-line-mystery
+# Checked what other files are in command-line-mystery
 ls
 
-Created a new file called mysolution.md
+# Created a new file called mysolution.md
 touch mysolution.md
 
-Opened instructions
+# Opened instructions
 less instructions
 
-Opened up cheatsheet.md
+# Opened up cheatsheet.md
 less cheatsheet.md
 
-Opened up hint1 hint8
+# Opened up hint1 hint8
 less hint
-
-# Change directory to mystery
-cd /users/book/wdi/command-line-mystery/mystery/
 
 # Check for clues
 grep "CLUE" crimescene
 # potential clue, barista noticed woman, name on latte was Annabel
-#Found a wallet believed to belong to the killer: no ID, just loose change, and membership cards for AAA, Delta SkyMiles, the local library, and the Museum of Bash History. The cards are totally untraceable and have no name, for some reason.
-#Search for a female by the name of Annabel
+# Found a wallet believed to belong to the killer: no ID, just loose change, and membership cards for AAA, Delta SkyMiles, the local library, and the Museum of Bash History. The cards are totally untraceable and have no name, for some reason.
+
+# Search for a female by the name of Annabel
 grep "Annabel" people
 
 # Search the address for each Annabel to look for clues
@@ -78,107 +77,107 @@ grep -i L33 vehicles
 
 grep -A 5 "L337ZR9" vehicles
 #License Plate L337ZR9
-Make: Honda
-Color: Red
-Owner: Katie Park
-Height: 6'2"
-Weight: 189 lbs
+#Make: Honda
+#Color: Red
+#Owner: Katie Park
+#Height: 6'2"
+#Weight: 189 lbs
 
 grep -A 5 "L337P89" vehicles
 #License Plate L337P89
-Make: Honda
-Color: Teal
-Owner: Mike Bostock
-Height: 6'4"
-Weight: 173 lbs
+#Make: Honda
+#Color: Teal
+#Owner: Mike Bostock
+#Height: 6'4"
+#Weight: 173 lbs
 
 grep -A 5 "L337GX9" vehicles
 #License Plate L337GX9
-Make: Mazda
-Color: Orange
-Owner: John Keefe
-Height: 6'4"
-Weight: 185 lbs
+#Make: Mazda
+#Color: Orange
+#Owner: John Keefe
+#Height: 6'4"
+#Weight: 185 lbs
 
 grep -A 5 "L337QE9" vehicles
 #License Plate L337QE9
-Make: Honda
-Color: Blue
-Owner: Erika Owens
-Height: 6'5"
-Weight: 220 lbs
+#Make: Honda
+#Color: Blue
+#Owner: Erika Owens
+#Height: 6'5"
+#Weight: 220 lbs
 
 grep -A 5 "L337GB9" vehicles
 #License Plate L337GB9
-Make: Toyota
-Color: Blue
-Owner: Matt Waite
-Height: 6'1"
-Weight: 190 lbs
+#Make: Toyota
+#Color: Blue
+#Owner: Matt Waite
+#Height: 6'1"
+#Weight: 190 lbs
 
 grep -A 5 "L337OI9" vehicles
 #License Plate L337OI9
-Make: Jaguar
-Color: Blue
-Owner: Brian Boyer
-Height: 6'6"
-Weight: 201 lbs
+#Make: Jaguar
+#Color: Blue
+#Owner: Brian Boyer
+#Height: 6'6"
+#Weight: 201 lbs
 
 grep -A 5 "L337X19" vehicles
 #License Plate L337X19
-Make: Fiat
-Color: Blue
-Owner: Al Shaw
-Height: 6'5"
-Weight: 240 lbs
+#Make: Fiat
+#Color: Blue
+#Owner: Al Shaw
+#Height: 6'5"
+#Weight: 240 lbs
 
 grep -A 5 "L337539" vehicles
 #License Plate L337539
-Make: Honda
-Color: Blue
-Owner: Aron Pilhofer
-Height: 5'3"
-Weight: 198 lbs
+#Make: Honda
+#Color: Blue
+#Owner: Aron Pilhofer
+#Height: 5'3"
+#Weight: 198 lbs
 
 grep -A 5 "L3373U9" vehicles
 #License Plate L3373U9
-Make: Ford
-Color: Blue
-Owner: Miranda Mulligan
-Height: 6'6"
-Weight: 156 lbs
+#Make: Ford
+#Color: Blue
+#Owner: Miranda Mulligan
+#Height: 6'6"
+#Weight: 156 lbs
 
 grep -A 5 "L337369" vehicles
 #License Plate L337369
-Make: Honda
-Color: Blue
-Owner: Heather Billings
-Height: 5'2"
-Weight: 244 lbs
+#Make: Honda
+#Color: Blue
+#Owner: Heather Billings
+#Height: 5'2"
+#Weight: 244 lbs
 
 grep -A 5 "L337DV9" vehicles
 #License Plate L337DV9
-Make: Honda
-Color: Blue
-Owner: Joe Germuska
-Height: 6'2"
-Weight: 164 lbs
+#Make: Honda
+#Color: Blue
+#Owner: Joe Germuska
+#Height: 6'2"
+#Weight: 164 lbs
 
 grep -A 5 "L3375A9" vehicles
 #License Plate L3375A9
-Make: Honda
-Color: Blue
-Owner: Jeremy Bowers
-Height: 6'1"
-Weight: 204 lbs
+#Make: Honda
+#Color: Blue
+#Owner: Jeremy Bowers
+#Height: 6'1"
+#Weight: 204 lbs
 
 grep -A 5 "L337WR9" vehicles
 #License Plate L337WR9
-Make: Honda
-Color: Blue
-Owner: Jacqui Maher
-Height: 6'2"
-Weight: 130 lbs
+#Make: Honda
+#Color: Blue
+#Owner: Jacqui Maher
+#Height: 6'2"
+#Weight: 130 lbs
 
 # Caneled out those who are not taller than 6' and does not drive a Blue Honda
 # Check membership and entire directory based on potential suspects (Maher, Bowers, Germuska, Owens)
