@@ -22,3 +22,11 @@ less streets/Buckingham_Place
 less interviews/interview-699607
 
 grep -A 5 "L337" vehicles
+
+grep -c "Mike Bostock" AAA Delta_SkyMiles Terminal_City_Library Museum_of_Bash_History
+grep -c "Matt Waite" AAA Delta_SkyMiles Terminal_City_Library Museum_of_Bash_History
+grep -c "Joe Germuska" AAA Delta_SkyMiles Terminal_City_Library Museum_of_Bash_History
+grep -c "John Keefe" AAA Delta_SkyMiles Terminal_City_Library Museum_of_Bash_History
+grep -c "Jeremy Bowers" AAA Delta_SkyMiles Terminal_City_Library Museum_of_Bash_History
+
+By process of elimination, the criminal is Jeremy Bowers.
