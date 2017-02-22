@@ -13,9 +13,11 @@ interviews $ cat interview-699607
 Interviewed Ms. Church at 2:04 pm.  Witness stated that she did not see anyone she could identify as the shooter, 
 that she ran away as soon as the shots were fired.
 However, she reports seeing the car that fled the scene.  Describes it as a blue Honda, with a license plate that
- starts with "L337" and ends with "9"
+starts with "L337" and ends with "9"
+
+grep L337* ./vehicles 
  
- License Plate L337ZR9
+License Plate L337ZR9
 License Plate L337P89
 License Plate L337GX9
 License Plate L337QE9
@@ -74,9 +76,16 @@ Owner: Jacqui Maher
 Height: 6'2"
 Weight: 130 lbs
 
+clue 7:
 
+egrep '((Erika Owens)|(Aron Pilhofer)|(Heather Billings)|(Joe Germuska)|(Jeremy Bowers)|(Jacqui Maher))' ./people | grep '\tM\t' | cut -f1
 
+Joe Germuska
+Jeremy Bowers
+Aron Pilhofer
 
+egrep -R '((Joe Germuska)|(Jeremy Bowers)|(Aron Pilhofer))' ./memberships
 
+may be Jeremy Bowers or aron pilhofer
 
 
