@@ -86,6 +86,7 @@ Aron Pilhofer
 
 egrep -R '((Joe Germuska)|(Jeremy Bowers)|(Aron Pilhofer))' ./memberships
 
-may be Jeremy Bowers or aron pilhofer
+All MemberShips: Jeremy Bowers
+who did it? may be Jeremy Bowers
 
 
