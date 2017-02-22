@@ -1,63 +1,81 @@
-```zsh
-# Clone the initial repository
-git clone git@github.com:eerwitt/command-line-mystery.git
-cd command-line-mystery
+## Command Line Steps Completed
 
-# Check the status to see if anything is already marked as new (shouldn't be)
-git status
+EMARTIN:~ emartin$ cd ga
+EMARTIN:ga emartin$ cd wdi
+EMARTIN:wdi emartin$ cd homework
+EMARTIN:homework emartin$ ls
+EMARTIN:homework emartin$ cd command-line-mystery/
+EMARTIN:command-line-mystery emartin$ ls
+EMARTIN:command-line-mystery emartin$ cat instructions
+EMARTIN:command-line-mystery emartin$ ls
+EMARTIN:command-line-mystery emartin$ cd mystery
+EMARTIN:mystery emartin$ ls
+EMARTIN:mystery emartin$ cd crimescene
+EMARTIN:mystery emartin$ head -n 20 crimescene
+EMARTIN:mystery emartin$ grep -w "CLUE" crimescene > clues.txt
+EMARTIN:mystery emartin$ ls
+EMARTIN:mystery emartin$ cat clues.txt
+EMARTIN:mystery emartin$ ls
+EMARTIN:mystery emartin$ cat people
+EMARTIN:mystery emartin$ grep -w "Annabel" people > annabels.txt
+EMARTIN:mystery emartin$ ls
+EMARTIN:mystery emartin$ cat annabels.txt
+EMARTIN:mystery emartin$ ls
+EMARTIN:mystery emartin$ cd streets
+EMARTIN:streets emartin$ ls
+EMARTIN:streets emartin$ cat streets.txt
+EMARTIN:streets emartin$ cd ..
+EMARTIN:mystery emartin$ ls
+EMARTIN:mystery emartin$ cd memberships
+EMARTIN:memberships emartin$ ls
+EMARTIN:memberships emartin$ cd ..
+EMARTIN:mystery emartin$ ls
+EMARTIN:mystery emartin$ cd ..
+EMARTIN:command-line-mystery emartin$ ls
+EMARTIN:command-line-mystery emartin$ cat hint2
+EMARTIN:command-line-mystery emartin$ ls
+EMARTIN:command-line-mystery emartin$ cd mystery
+EMARTIN:mystery emartin$ cat hint3
+EMARTIN:mystery emartin$ cat hint4
+EMARTIN:mystery emartin$ cat hint5
+EMARTIN:mystery emartin$ cat hint6
+EMARTIN:mystery emartin$ cat hint7
+EMARTIN:mystery emartin$ cat hint8
+EMARTIN:command-line-mystery emartin$ cd mystery
+EMARTIN:mystery emartin$ ls
+EMARTIN:mystery emartin$ cd memberships
+EMARTIN:memberships emartin$ ls
+EMARTIN:memberships emartin$ cat AAA Museum_of_Bash_History Delta_SkyMiles Terminal_City_Library > all4memberships.txt
+EMARTIN:memberships emartin$ ls
+EMARTIN:memberships emartin$ cd ..
+EMARTIN:mystery emartin$ ls
+EMARTIN:mystery emartin$ cd streets
+EMARTIN:streets emartin$ ls
+EMARTIN:streets emartin$ head -n 40 Hart_Place | tail -n 1
+EMARTIN:streets emartin$ head -n 179 Buckingham_Place | tail -n 1
+EMARTIN:streets emartin$ cd ..
+EMARTIN:mystery emartin$ cd interviews
+EMARTIN:interviews emartin$ ls
+EMARTIN:interviews emartin$ cat interview-47246024
+EMARTIN:interviews emartin$ cat interview-699607
+EMARTIN:interviews emartin$ cd ..
+EMARTIN:mystery emartin$ ls
+EMARTIN:mystery emartin$ cd vehicles
+EMARTIN:mystery emartin$ head -n 20 vehicles
+EMARTIN:mystery emartin$ grep -C 5 "L337" vehicles
+EMARTIN:mystery emartin$ ls
+EMARTIN:mystery emartin$ cd people
+EMARTIN:mystery emartin$ head -n 20 people
+EMARTIN:mystery emartin$ grep -w "Germuska" people
+EMARTIN:mystery emartin$ grep -w "Bowers" people
+EMARTIN:mystery emartin$ ls
+EMARTIN:mystery emartin$ cd memberships
+EMARTIN:memberships emartin$  ls
+EMARTIN:memberships emartin$ grep -c "Germuska" all4memberships.txt
+EMARTIN:memberships emartin$ grep -c "Bowers" all4memberships.txt
 
-# Edit my solution file
-subl solution.md
+##Who dunnit?
+Jeremy Bowers
 
-# Commit initial solution
-git add solution.md
-git commit -a
 
-# Start reading the instructions
-less instructions
 
-# Check for clues in the mystery
-cd mystery
-grep CLUE ./crimescene
-
-# Search for person with the Latte
-grep Annabel ./people
-
-# Knock on her door
-less streets/Mattapan_Street
-# Goto line in file using less: http://stackoverflow.com/questions/8586648/going-to-a-specific-line-number-using-less-in-unix
-# in less type 173g
-# Try different interviews
-less interviews/interview-47246024
-
-less interviews/interview-699607
-
-# Checking for vehicle
-less vehicles
-# Search in less for vehicles starting with L337 and ending in 9
-# in less /L337..9
-# Check which are over 6'
-# Katie Park
-# Mike Bostock
-# John Keefe
-# Erika Owens
-# Matt Waite
-# Brian Boyer
-# Al Shaw
-# Miranda Mulligan
-# Joe Germuska
-# Jeremy Bowers
-# Jacqui Maher
-
-# Check which is male/female and get their names
-egrep '((Katie Park)|(Mike Bostock)|(John Keefe)|(Erika Owens)|(Matt Waite)|(Brian Boyer)|(Al Shaw)|(Miranda Mulligan)|(Joe Germuska)|(Jeremy Bowers)|(Jacqui Maher))' ./people | grep '\tM\t' | cut -f1
-
-# Limit down by membership
-egrep -R '((Joe Germuska)|(Brian Boyer)|(Mike Bostock)|(Jeremy Bowers)|(John Keefe)|(Al Shaw)|(Matt Waite))' ./memberships
-
-# (Jeremy Bowers)|(Brian Boyer)|(Mike Bostock)|(Matt Waite)
-# Not MB, wrong car color
-# Not MW, wrong car manufacturer
-# Not BB, wrong car manufacturer
-# JB, it is JB
-```
