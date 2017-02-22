@@ -1,0 +1,57 @@
+
+Mystery.Blakesmith
+
+*************************************
+Killer - Jeremy Bowers
+*************************************
+
+After using the grep command to find information in the different files, I cross-referenced my findings based on the 'CLUES'. 
+
+
+License Plate L3375A9
+Make: Honda
+Color: Blue
+Owner: Jeremy Bowers
+Height: 6'1"
+Weight: 204 lbs
+
+memberships
+AAA, Delta, Library, Museum
+
+Blakes-MacBook-Pro:command-line-mystery bs3589$ cd mystery/
+Blakes-MacBook-Pro:mystery bs3589$ gre -r 'Jeremy' *
+-bash: gre: command not found
+Blakes-MacBook-Pro:mystery bs3589$ grep -r 'Jeremy' *
+memberships/AAA:Jeremy Bowers
+memberships/Delta_SkyMiles:Jeremy Bowers
+memberships/Museum_of_Bash_History:Jeremy Bowers
+memberships/Terminal_City_Library:Jeremy Bowers
+people:Jeremy Bowers	M	34	Dunstable Road, line 284
+vehicles:Owner: Jeremy Bowers
+Blakes-MacBook-Pro:mystery bs3589$ 
+
+
+
+Blakes-MacBook-Pro:mystery bs3589$ cd interviews/
+Blakes-MacBook-Pro:interviews bs3589$ cat interview-699607
+
+
+*************************************
+Witness - Annabel Church
+*************************************
+
+
+Memberships: AAA, Museum
+
+License Plate L2E48EF
+Make: BMW
+Color: Orange
+Owner: Annabel Church
+Height: 5'5"
+Weight: 201 lbs
+
+Interview 699607
+
+Interviewed Ms. Church at 2:04 pm.  Witness stated that she did not see anyone she could identify as the shooter, that she ran away as soon as the shots were fired.
+
+However, she reports seeing the car that fled the scene.  Describes it as a blue Honda, with a license plate that starts with "L337" and ends with "9"Blakes-MacBook-Pro:interviews bs3589$ 
