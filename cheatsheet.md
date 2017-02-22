@@ -157,7 +157,9 @@ The commands we're going to talk about all output their results as text.  When y
 	Stijn Debrouwere
 	/files$
 
-Notice that after it prints out its output, it goes back to giving you a fresh prompt.  Getting the output printed out to you in this fashion is useful if you're just poking around, but often you want to do one of two things: **send the output to a file**, or **send the output to another command as an input**.
+Notice that after it prints out its output, it goes back to giving you a fresh prompt.  Getting the output printed out to you 
+in this fashion is useful if you're just poking around, but often you want to do one of two things: 
+**send the output to a file**, or **send the output to another command as an input**.
 
 ### Sending the output to a file
 
