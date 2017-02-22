@@ -1,63 +1,84 @@
-```zsh
-# Clone the initial repository
-git clone git@github.com:eerwitt/command-line-mystery.git
-cd command-line-mystery
+# read instructions
+cat instructions
 
-# Check the status to see if anything is already marked as new (shouldn't be)
-git status
-
-# Edit my solution file
-subl solution.md
-
-# Commit initial solution
-git add solution.md
-git commit -a
-
-# Start reading the instructions
-less instructions
-
-# Check for clues in the mystery
+# go to mystery subdirectory
 cd mystery
-grep CLUE ./crimescene
 
-# Search for person with the Latte
-grep Annabel ./people
+# all clues are marked with "CLUE" so use a grep command to search each directory in the mystery directory
+grep "CLUE" crimescene
 
-# Knock on her door
-less streets/Mattapan_Street
-# Goto line in file using less: http://stackoverflow.com/questions/8586648/going-to-a-specific-line-number-using-less-in-unix
-# in less type 173g
-# Try different interviews
-less interviews/interview-47246024
+# suspect is Male; over 6'; membership cards for "AAA", "Delta_SkyMiles", "Library", and "Museum_of_Bash_History"
 
-less interviews/interview-699607
+# first real witness is Annabel, a female, search people for that name
+grep "Annabel" people
 
-# Checking for vehicle
-less vehicles
-# Search in less for vehicles starting with L337 and ending in 9
-# in less /L337..9
-# Check which are over 6'
-# Katie Park
-# Mike Bostock
-# John Keefe
-# Erika Owens
-# Matt Waite
-# Brian Boyer
-# Al Shaw
-# Miranda Mulligan
-# Joe Germuska
+#only two of the four were female. Searched adresses in streets
+cd streets
+cat Hart_Place
+cat Buckingham_Place
+
+# also gave me line numbers to search, assuming in streets
+# line 40 for Hart and 179 for Buckingham
+
+# used hint5 to find out how to search for specific line numbers in a file
+head -n 40 streets/Hart_Place | tail -n 1
+head -n 179 streets/Buckingham_Place | tail -n 1
+
+# these returned interview numbers
+# search interviews for the first from Hart_Place
+cat interview-47246024
+
+# first is not the witness from the cafe
+#search interviews for the second form Buckingham_Place
+cat interview-699607
+
+# AHA the witness. Saw a BLUE HONDA, with LISCENSE PLATE that starts with "L337" and ends with "9"
+
+# time to grep vehcles for "L337"
+grep "L337" vehicles
+
+# didnt help, only showed 9 liscense numbers
+# hint7 said to use the "A" option with grep
+grep -A 5 "L337" mystery/vehicles
+
+# decided to try and ad a pipe after that to filter out "Blue" cars
+grep -A 5 "L337" mystery/vehicles | grep -A 7 "Blue"
+
+# seemed to work, scrolled through and wrote down all the male names
 # Jeremy Bowers
-# Jacqui Maher
+# Joe Germuska
+# Aron Pilhofer 
+# Al Shaw
+# Brian Boyer
+# Matt Waite
 
-# Check which is male/female and get their names
-egrep '((Katie Park)|(Mike Bostock)|(John Keefe)|(Erika Owens)|(Matt Waite)|(Brian Boyer)|(Al Shaw)|(Miranda Mulligan)|(Joe Germuska)|(Jeremy Bowers)|(Jacqui Maher))' ./people | grep '\tM\t' | cut -f1
+# Then looked at the car makes since we know its a honda
+# only 3 had hondas
+# Jeremy Bowers - Honda
+# Joe Germuska - Honda
+# Aron Pilhofer - Honda
 
-# Limit down by membership
-egrep -R '((Joe Germuska)|(Brian Boyer)|(Mike Bostock)|(Jeremy Bowers)|(John Keefe)|(Al Shaw)|(Matt Waite))' ./memberships
+# looked at their heights, only two are over 6' like the culprit
+# Jeremy Bowers
+# Joe Germuska
 
-# (Jeremy Bowers)|(Brian Boyer)|(Mike Bostock)|(Matt Waite)
-# Not MB, wrong car color
-# Not MW, wrong car manufacturer
-# Not BB, wrong car manufacturer
-# JB, it is JB
-```
+# now use the names to search for memberships
+# going to cat each of the memberships together and pipe it into a grep for the persons name. the person who is a member of all 4 is the culrpit
+cat AAA Delta_SkyMiles Terminal_City_Library Museum_of_Bash_History | grep "persons name"
+
+# Jeremy Bowers is a member of all 4 therefore is the culprit.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
